@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crear Kill Team</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            display: table;
+        }
+
+        .outline_header {
+            padding-top: 4px;
+            font-family: 'Impact', charcoal, arial black;
+            font-size: 2.60em;
+            color: #c54c21;
+            letter-spacing: 0.05em;
+            font-weight: normal;
+            margin: 8px 0px 8px 0px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Impact', charcoal, arial black;
+            font-size: 1.67em;
+            color: #c54c21;
+            letter-spacing: 0.02em;
+            font-weight: normal;
+            margin: 0px 0px 2px 0px;
+            text-transform: uppercase
+        }
+
+        /*
+        form {
+            display: table;
+        }
+        */
+
+        p {
+            display: table-row;
+        }
+
+        label {
+            display: table-cell;
+            text-align: right;
+        }
+
+        input {
+            display: table-cell;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Crear Kill Team</h2>
+    <form method="post">
+        <div class="container">
+            <div class="column">
+                <p>
+                    <label for="killteam_name">Nombre de Kill Team:</label>
+                    <input type="text" id="killteam_name" name="killteam_name"><br><br>
+                </p>
+                <p>
+                    <label for="player_name">Nombre de jugador:</label>
+                    <input type="text" id="player_name" name="player_name"><br><br>
+                </p>
+                <p>
+                    <label for="faction_keyword">Keyword de Facción (Krieg, Ultramarine, etc.):</label>
+                    <input type="text" id="faction_keyword" name="faction_keyword"><br><br>
+                </p>
+                <p>
+                    <label for="base_name">Nombre de Base de Operaciones:</label>
+                    <input type="text" id="base_name" name="base_name"><br><br>
+                </p>
+                <p>
+                    <label for="backstory">Historia:</label>
+                    <input type="text" id="backstory" name="backstory"><br><br>
+                </p>
+                <input type="submit" value="Submit">
+
+            </div>
+            <div class="column">
+                <p>
+                    <label for="req_points">Requisition Points:</label>
+                    <!-- Ask about language? Should it be spanish or english -->
+                    <input type="text" id="req_points" name="req_points" disabled="disabled" value="1 (for now)"><br><br>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
